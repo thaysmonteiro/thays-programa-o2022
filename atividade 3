@@ -1,0 +1,78 @@
+FaixaDetector =100#nm
+resolucao = '30x30' #pixels escolhidos
+angulopedido = 15 
+limiteresolucao = 1.45
+microscopioreferente= "TAMIC" #modeloescolhido
+largura_de_banda = 50 
+diodo = 978 
+intensmax = 5.22
+intensmin = 9.85
+Bandascomprimento= 63 
+aberturapedida = 40 
+aberturaemcirculo = 20 
+
+print("objetivo: receber seus dados de usuário para a configuração do seu microscópio confocal")
+
+FaixaDetector2 =input("faixa do detector aqui")
+print("alguma alteração na faixa?",int(faixa_do_detector) != int(faixa_do_detector2))
+
+resolucao2 =input("Insira a resolução")
+print("resolução alterada?",str(resolucao) != str(resolucao2))
+
+limiteresolucao2 =input("Insira o limite de resolução")
+print("alterações do limite?",float(limite_de_resolucao) != float(limite_de_resolucao2))
+
+intensmax2 =input("Insira o valor da intensidade no ponto mais alto")
+print("Houve alteração da intensidade no ponto mais alto?",float(intensmax) != float(intensmax2))
+
+microscopioreferente2 =input("Insira o modelo do microscópio")
+print("Houve alteração do modelo do microscópio?",str(modelo_de_microscopio) != str(modelo_de_microscopio2))
+
+banda2 =input("Insira a largura de banda")
+print("alterações?",float(banda) != float(banda2))
+
+aberturaemcirculo2 =input("abertura em circulo aqui")
+print("abertura alterada?",int(aberturaemcirculo) != int(aberturaemcirculo2))
+
+intensmin2 =input("Insira o valor da intensidade menor")
+print("alterações?",int(intensmin) != int(intensmin))
+
+diodo2 =input("Insira o valor do diodo")
+print("existem alterações?",float(faixa_do_diodo) != float(faixa_do_diodo2))
+
+angulo_incidencia2 =input("Insira o angulo de incidencia")
+print("Houve alteração do angulo de incidencia?",float(angulo_incidencia) != float(angulo_incidencia2))
+#f
+print("As informações digitadas pelo usuário são:")
+print("Faixa do detector:", faixa_do_detector2)
+print("A resolução escolhida é:", resolucao2)
+print("O angulo de incidencia escolhido é:", angulo_incidencia2)
+print("O limite de resolução escolhido é:", limite_de_resolucao2)
+print("O valor da intensidade maior é:", intmax2)
+print("O valor da intensidade no ponto mais baixo é:", intmin2)
+print("O modelo do microscópio escolhido foi:", microscopioreferente2)
+print("A largura de banda escolhida é:", largura_de_banda2)
+print("A abertura circular escolhida foi:", abertura_circular2)
+print("A faixa do diodo escolhida foi:", diodo2)
+
+primeira_letra = "tttttttttt"
+ultima_letra = "ssssssssss"
+
+print("Para realizar a calibração horizontal, pressione a primeira letra do seu nome 10 vezes e depois a ultima letra do seu nome 10 vezes")
+
+primeira_letra_2 = input("Pressione a primeira letra do seu nome 10 vezes e depois aperte enter")
+print(str(primeira_letra) == str(primeira_letra_2))
+ultima_letra2 = input("Pressione a ultima letra do seu nome 10 vezes e depois aperte enter")
+print(str(ultima_letra) == str(ultima_letra2))
+
+print("Para realizar a calibração horizontal, pressione a segunda letra do seu nome 10 vezes e depois a penultima letra do seu nome 10 vezes")
+
+letra2 = "hhhhhhhhhh"
+penultiletra = "yyyyyyyyy"
+
+segunda_letra2 = input("Pressione a primeira letra do seu nome 10 vezes e depois aperte enter")
+print(str(segunda_letra) == str(segunda_letra2))
+penultima_letra2 = input("Pressione a ultima letra do seu nome 10 vezes e depois aperte enter")
+print(str(penultima_letra) == str(penultima_letra2))
+
+print("Calibração realizada")
